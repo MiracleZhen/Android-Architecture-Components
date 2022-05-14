@@ -1,2 +1,4 @@
 rootProject.name = "AAC"
 include ':app'
+include ':learns:l01-foundation'
+include ':learns:l02-kotlin'
