@@ -3,7 +3,9 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
       <module name="AAC.app" target="1.8" />
+      <module name="AAC.apps.app-mvc" target="1.8" />
       <module name="AAC.learns.l01-foundation" target="1.8" />
+      <module name="AAC.library-base.base" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

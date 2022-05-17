@@ -1,12 +1,26 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+// 导入配置文件
+apply from: 'configs.gradle'
+
 buildscript {
-    ext.kotlin_version = "1.5.31"
+
+    // 导入通用的 Maven 库配置
+    apply from: 'maven.gradle'
+
     repositories {
-        google()
-        mavenCentral()
+        // 阿里云云效仓库（Gradle 插件）：https://maven.aliyun.com/mvn/guide
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        addCommonMaven(repositories)
     }
+
+    ext.kotlin_version = "1.5.31"
+
+    // Studio 插件推荐：https://github.com/getActivity/StudioPlugins
     dependencies {
+        // Gradle 插件版本说明：https://developer.android.google.cn/studio/releases/gradle-plugin.html#updating-plugin
         classpath "com.android.tools.build:gradle:4.2.1"
+        // Kotlin 插件：https://plugins.jetbrains.com/plugin/6954-kotlin
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -15,11 +29,28 @@ buildscript {
 }
 
 allprojects {
+
     repositories {
-        google()
-        mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
+        // 友盟远程仓库：https://info.umeng.com/detail?id=443&cateId=1
+        maven { url 'https://repo1.maven.org/maven2' }
+        addCommonMaven(repositories)
     }
+
+    tasks.withType(JavaCompile) {
+        // 设置全局编码
+        options.encoding = 'UTF-8'
+    }
+    tasks.withType(Javadoc) {
+        // 设置文档编码
+        options {
+            encoding 'UTF-8'
+            charSet 'UTF-8'
+            links 'http://docs.oracle.com/javase/7/docs/api'
+        }
+    }
+
+    // 将构建文件统一输出到项目根目录下的 build 文件夹
+    setBuildDir(new File(rootDir, "build/${path.replaceAll(':', '/')}"))
 }
 
 task clean(type: Delete) {
