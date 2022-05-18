@@ -16,9 +16,10 @@ import kotlin.math.pow
 import java.util.*
 
 /**
- *    @author : wangchengzhen
- *    @time   : 2022/5/14
- *    @desc   : Activity 技术基类
+ *  author : wangchengzhen
+ *  github : https://github.com/getActivity/AndroidProject-Kotlin
+ *  time   : 2022/5/14
+ *  desc   : Activity 技术基类
  */
 abstract class BaseActivity : AppCompatActivity(),
     ActivityAction, BundleAction, ClickAction, HandlerAction, KeyboardAction {

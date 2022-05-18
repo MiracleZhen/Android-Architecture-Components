@@ -49,6 +49,11 @@ android {
         // 禁用图片描述警告
         disable 'ContentDescription'
     }
+
+    buildFeatures {
+        // 开启ViewBinding
+        viewBinding true
+    }
 }
 
 afterEvaluate {

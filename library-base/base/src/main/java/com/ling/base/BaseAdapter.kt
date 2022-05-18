@@ -11,9 +11,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ling.base.action.ResourcesAction
 
 /**
- *    @author : wangchengzhen
- *    @time   : 2022/5/16
- *    @desc   : RecyclerView 适配器技术基类
+ *  author : wangchengzhen
+ *  github : https://github.com/getActivity/AndroidProject-Kotlin
+ *  time   : 2022/5/16
+ *  desc   : RecyclerView 适配器技术基类
  */
 @Suppress("LeakingThis")
 abstract class BaseAdapter<VH : BaseAdapter<VH>.BaseViewHolder>(private val context: Context) :

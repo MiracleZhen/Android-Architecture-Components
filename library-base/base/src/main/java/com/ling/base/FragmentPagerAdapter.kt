@@ -8,9 +8,10 @@ import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
 
 /**
- *    @author : wangchengzhen
- *    @time   : 2022/5/16
- *    @desc   : FragmentPagerAdapter 封装
+ *  author : wangchengzhen
+ *  github : https://github.com/getActivity/AndroidProject-Kotlin
+ *  time   : 2022/5/16
+ *  desc   : FragmentPagerAdapter 封装
  */
 @Suppress("deprecation")
 open class FragmentPagerAdapter<F : Fragment> constructor(manager: FragmentManager) :

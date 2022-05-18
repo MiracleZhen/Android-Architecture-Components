@@ -5,9 +5,10 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 
 /**
- *    @author : wangchengzhen
- *    @time   : 2022/5/16
- *    @desc   : 软键盘相关意图
+ *  author : wangchengzhen
+ *  github : https://github.com/getActivity/AndroidProject-Kotlin
+ *  time   : 2022/5/16
+ *  desc   : 软键盘相关意图
  */
 interface KeyboardAction {
 

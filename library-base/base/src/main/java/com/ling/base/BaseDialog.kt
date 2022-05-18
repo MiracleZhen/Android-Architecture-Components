@@ -24,9 +24,10 @@ import com.ling.base.action.*
 import java.lang.ref.SoftReference
 
 /**
- *    @author : wangchengzhen
- *    @time   : 2022/5/17
- *    @desc   : Dialog 技术基类
+ *  author : wangchengzhen
+ *  github : https://github.com/getActivity/AndroidProject-Kotlin
+ *  time   : 2022/5/17
+ *  desc   : Dialog 技术基类
  */
 @Suppress("LeakingThis")
 open class BaseDialog constructor(context: Context, @StyleRes themeResId: Int = R.style.BaseDialogTheme) :

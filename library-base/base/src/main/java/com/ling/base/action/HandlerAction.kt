@@ -5,9 +5,10 @@ import android.os.Looper
 import android.os.SystemClock
 
 /**
- *    @author : wangchengzhen
- *    @time   : 2022/5/16
- *    @desc   : Handler 意图处理
+ *  author : wangchengzhen
+ *  github : https://github.com/getActivity/AndroidProject-Kotlin
+ *  time   : 2022/5/16
+ *  desc   : Handler 意图处理
  */
 interface HandlerAction {
 

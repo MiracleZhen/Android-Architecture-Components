@@ -3,9 +3,10 @@ package com.ling.base.action
 import com.ling.base.R
 
 /**
- *    @author : wangchengzhen
- *    @time   : 2022/5/14
- *    @desc   : 动画样式
+ *  author : wangchengzhen
+ *  github : https://github.com/getActivity/AndroidProject-Kotlin
+ *  time   : 2022/5/14
+ *  desc   : 动画样式
  */
 interface AnimAction {
 
