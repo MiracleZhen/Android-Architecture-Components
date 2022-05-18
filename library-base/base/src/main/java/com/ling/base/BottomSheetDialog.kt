@@ -13,10 +13,10 @@ import androidx.core.view.accessibility.AccessibilityNodeInfoCompat
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/17
- *  desc   : 在 BaseDialog 基础上加上 [com.google.android.material.bottomsheet.BottomSheetDialog] 特性
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/17
+ * desc   : 在 BaseDialog 基础上加上 [com.google.android.material.bottomsheet.BottomSheetDialog] 特性
  */
 @Suppress("LeakingThis")
 open class BottomSheetDialog @JvmOverloads constructor(context: Context, themeResId: Int = R.style.BaseDialogTheme) :

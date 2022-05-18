@@ -7,10 +7,10 @@ import androidx.appcompat.widget.AppCompatImageView
 import com.ling.widget.R
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/18
- *  desc   : 长按缩放松手恢复的 ImageView
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/18
+ * desc   : 长按缩放松手恢复的 ImageView
  */
 class ScaleImageView @JvmOverloads constructor(
     context: Context,

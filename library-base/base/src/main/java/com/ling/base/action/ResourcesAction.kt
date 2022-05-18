@@ -10,10 +10,10 @@ import androidx.annotation.StringRes
 import androidx.core.content.ContextCompat
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/16
- *  desc   : Context 意图处理（扩展非 Context 类的方法，请不要用 Context 子类实现此接口）
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/16
+ * desc   : Context 意图处理（扩展非 Context 类的方法，请不要用 Context 子类实现此接口）
  */
 interface ResourcesAction {
 

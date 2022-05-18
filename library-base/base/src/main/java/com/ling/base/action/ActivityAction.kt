@@ -6,10 +6,10 @@ import android.content.ContextWrapper
 import android.content.Intent
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/14
- *  desc   : Activity 相关意图
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/14
+ * desc   : Activity 相关意图
  */
 interface ActivityAction {
 

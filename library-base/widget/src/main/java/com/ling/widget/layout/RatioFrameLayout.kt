@@ -8,10 +8,10 @@ import android.widget.FrameLayout
 import com.ling.widget.R
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/18
- *  desc   : 按照比例显示的 FrameLayout
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/18
+ * desc   : 按照比例显示的 FrameLayout
  */
 class RatioFrameLayout @JvmOverloads constructor(
     context: Context,

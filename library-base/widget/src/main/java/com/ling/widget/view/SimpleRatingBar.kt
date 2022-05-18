@@ -15,10 +15,10 @@ import kotlin.math.max
 import kotlin.math.min
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/18
- *  desc   : 自定义评分控件（系统的 RatingBar 不好用）
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/18
+ * desc   : 自定义评分控件（系统的 RatingBar 不好用）
  */
 class SimpleRatingBar @JvmOverloads constructor(
     context: Context,

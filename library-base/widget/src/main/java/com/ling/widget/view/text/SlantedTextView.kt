@@ -14,10 +14,10 @@ import com.ling.widget.R
 import kotlin.math.max
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/HeZaiJin/SlantedTextView
- *  time   : 2022/5/17
- *  desc   : 一个倾斜的 TextView，适用于标签效果
+ * author : wangchengzhen
+ * github : https://github.com/HeZaiJin/SlantedTextView
+ * time   : 2022/5/17
+ * desc   : 一个倾斜的 TextView，适用于标签效果
  */
 @Suppress("RtlHardcoded")
 class SlantedTextView @JvmOverloads constructor(

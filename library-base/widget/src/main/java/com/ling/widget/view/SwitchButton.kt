@@ -12,10 +12,10 @@ import android.view.animation.AccelerateInterpolator
 import com.ling.widget.R
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/18
- *  desc   : 高仿 ios 开关按钮
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/18
+ * desc   : 高仿 ios 开关按钮
  */
 class SwitchButton @JvmOverloads constructor(
     context: Context,

@@ -7,10 +7,10 @@ import androidx.core.view.*
 import androidx.viewpager.widget.ViewPager
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/18
- *  desc   : 支持嵌套滚动的 ViewPager
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/18
+ * desc   : 支持嵌套滚动的 ViewPager
  */
 class NestedViewPager @JvmOverloads constructor(
     context: Context,

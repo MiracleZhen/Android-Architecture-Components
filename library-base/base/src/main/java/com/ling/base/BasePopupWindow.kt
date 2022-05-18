@@ -19,10 +19,10 @@ import com.ling.base.action.*
 import java.lang.ref.SoftReference
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/17
- *  desc   : PopupWindow 技术基类
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/17
+ * desc   : PopupWindow 技术基类
  */
 open class BasePopupWindow constructor(private val context: Context) : PopupWindow(context), ActivityAction,
     HandlerAction, ClickAction, AnimAction, KeyboardAction, PopupWindow.OnDismissListener {

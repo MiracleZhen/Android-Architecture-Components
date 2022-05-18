@@ -18,10 +18,10 @@ import com.ling.base.action.HandlerAction
 import com.ling.base.action.KeyboardAction
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/14
- *  desc   : Fragment 技术基类
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/14
+ * desc   : Fragment 技术基类
  */
 abstract class BaseFragment<A : BaseActivity> : Fragment(),
     BundleAction, ClickAction, HandlerAction, KeyboardAction {

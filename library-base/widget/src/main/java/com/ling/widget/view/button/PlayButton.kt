@@ -10,10 +10,10 @@ import android.view.animation.AnticipateInterpolator
 import com.ling.widget.R
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/codeestX/ENViews
- *  time   : 2022/5/18
- *  desc   : 播放暂停动效的按钮
+ * author : wangchengzhen
+ * github : https://github.com/codeestX/ENViews
+ * time   : 2022/5/18
+ * desc   : 播放暂停动效的按钮
  */
 class PlayButton @JvmOverloads constructor(
     context: Context,

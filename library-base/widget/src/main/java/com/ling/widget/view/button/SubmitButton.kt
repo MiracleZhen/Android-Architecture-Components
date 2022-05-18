@@ -15,10 +15,10 @@ import com.ling.widget.R
 import kotlin.math.sqrt
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/Someonewow/SubmitButton
- *  time   : 2022/5/18
- *  desc   : 带提交动画按钮
+ * author : wangchengzhen
+ * github : https://github.com/Someonewow/SubmitButton
+ * time   : 2022/5/18
+ * desc   : 带提交动画按钮
  */
 class SubmitButton @JvmOverloads constructor(
     context: Context,

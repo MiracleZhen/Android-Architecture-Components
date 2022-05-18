@@ -4,10 +4,10 @@ import android.view.View
 import androidx.annotation.IdRes
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/16
- *  desc   : 点击事件意图
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/16
+ * desc   : 点击事件意图
  */
 interface ClickAction : View.OnClickListener {
 

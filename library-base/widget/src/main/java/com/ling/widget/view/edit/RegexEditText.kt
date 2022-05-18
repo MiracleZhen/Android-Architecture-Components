@@ -11,10 +11,10 @@ import com.ling.widget.R
 import java.util.regex.Pattern
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/17
- *  desc   : 正则输入限制编辑框
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/17
+ * desc   : 正则输入限制编辑框
  */
 open class RegexEditText @JvmOverloads constructor(
     context: Context,

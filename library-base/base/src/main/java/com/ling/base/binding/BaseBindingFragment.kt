@@ -10,10 +10,10 @@ import java.lang.reflect.InvocationTargetException
 import java.lang.reflect.ParameterizedType
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/chengzhen-wang/Android-Architecture-Components
- *  time   : 2022/5/17
- *  desc   : Fragment ViewBinding基类 - https://www.jianshu.com/p/4ed5eef13fc9
+ * author : wangchengzhen
+ * github : https://github.com/chengzhen-wang/Android-Architecture-Components
+ * time   : 2022/5/17
+ * desc   : Fragment ViewBinding基类 - https://www.jianshu.com/p/4ed5eef13fc9
  */
 abstract class BaseBindingFragment<A : BaseBindingActivity<*>, VB : ViewBinding> :
     BaseFragment<A>() {

@@ -140,5 +140,7 @@ dependencies {
     // 基类封装
     implementation project(':library-base:base')
     // 控件封装
-    // implementation project(':library:widget')
+    implementation project(':library-base:widget')
+    // 工具封装
+    implementation project(':library-base:utils')
 }

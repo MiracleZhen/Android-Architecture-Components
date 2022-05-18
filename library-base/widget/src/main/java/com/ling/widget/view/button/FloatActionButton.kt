@@ -6,10 +6,10 @@ import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatImageView
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/18
- *  desc   : 带悬浮动画的按钮
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/18
+ * desc   : 带悬浮动画的按钮
  */
 class FloatActionButton @JvmOverloads constructor(
     context: Context,

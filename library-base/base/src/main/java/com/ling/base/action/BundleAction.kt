@@ -6,10 +6,10 @@ import java.io.Serializable
 import java.util.*
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/14
- *  desc   : 参数意图
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/14
+ * desc   : 参数意图
  */
 interface BundleAction {
 

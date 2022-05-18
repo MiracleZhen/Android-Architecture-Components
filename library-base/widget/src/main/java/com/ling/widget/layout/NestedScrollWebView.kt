@@ -10,10 +10,10 @@ import androidx.core.view.ViewCompat
 import kotlin.math.max
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/tobiasrohloff/NestedScrollWebView
- *  time   : 2022/5/18
- *  desc   : 支持嵌套滚动的 WebView
+ * author : wangchengzhen
+ * github : https://github.com/tobiasrohloff/NestedScrollWebView
+ * time   : 2022/5/18
+ * desc   : 支持嵌套滚动的 WebView
  */
 open class NestedScrollWebView @JvmOverloads constructor(
     context: Context,

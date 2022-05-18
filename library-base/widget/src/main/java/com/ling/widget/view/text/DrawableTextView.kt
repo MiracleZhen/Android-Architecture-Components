@@ -8,10 +8,10 @@ import androidx.appcompat.widget.AppCompatTextView
 import com.ling.widget.R
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/17
- *  desc   : 支持限定 Drawable 大小的 TextView
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/17
+ * desc   : 支持限定 Drawable 大小的 TextView
  */
 class DrawableTextView @JvmOverloads constructor(
     context: Context,

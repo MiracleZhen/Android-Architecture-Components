@@ -5,10 +5,10 @@ import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatTextView
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/18
- *  desc   : 验证码倒计时
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/18
+ * desc   : 验证码倒计时
  */
 class CountdownView @JvmOverloads constructor(
     context: Context,

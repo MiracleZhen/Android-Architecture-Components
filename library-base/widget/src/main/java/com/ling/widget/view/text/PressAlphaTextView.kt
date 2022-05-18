@@ -5,10 +5,10 @@ import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatTextView
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/17
- *  desc   : 长按半透明松手恢复的 TextView
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/17
+ * desc   : 长按半透明松手恢复的 TextView
  */
 class PressAlphaTextView @JvmOverloads constructor(
     context: Context,

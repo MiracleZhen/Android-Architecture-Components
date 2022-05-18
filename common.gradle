@@ -71,10 +71,13 @@ dependencies {
     implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
 
     // AndroidX 库：https://github.com/androidx/androidx
+    // noinspection GradleDependency
     implementation 'androidx.appcompat:appcompat:1.3.1'
     // Material 库：https://github.com/material-components/material-components-android
+    // noinspection GradleDependency
     implementation 'com.google.android.material:material:1.4.0'
     // ConstraintLayout 库：https://github.com/androidx/constraintlayout
+    // noinspection GradleDependency
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
 
     // Kotlin 协程：https://github.com/Kotlin/kotlinx.coroutines
@@ -83,6 +86,8 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
 
+    // noinspection GradleDependency
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.5.31'
+    // noinspection GradleDependency
     implementation 'androidx.core:core-ktx:1.3.1'
 }

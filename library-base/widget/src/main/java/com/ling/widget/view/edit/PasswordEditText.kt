@@ -18,10 +18,10 @@ import androidx.core.graphics.drawable.DrawableCompat
 import com.ling.widget.R
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/18
- *  desc   : 密码隐藏显示 EditText
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/18
+ * desc   : 密码隐藏显示 EditText
  */
 @Suppress("ClickableViewAccessibility")
 class PasswordEditText @JvmOverloads constructor(

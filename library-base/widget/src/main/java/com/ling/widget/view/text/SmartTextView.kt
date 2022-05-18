@@ -7,10 +7,10 @@ import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatTextView
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/17
- *  desc   : 自动显示和隐藏的 TextView
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/17
+ * desc   : 自动显示和隐藏的 TextView
  */
 class SmartTextView @JvmOverloads constructor(
     context: Context,

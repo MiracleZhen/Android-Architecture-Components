@@ -15,10 +15,10 @@ import androidx.core.graphics.drawable.DrawableCompat
 import com.ling.widget.R
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/17
- *  desc   : 带清除按钮的 EditText
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/17
+ * desc   : 带清除按钮的 EditText
  */
 @Suppress("ClickableViewAccessibility")
 class ClearEditText @JvmOverloads constructor(

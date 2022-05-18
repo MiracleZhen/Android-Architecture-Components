@@ -11,10 +11,10 @@ import androidx.core.view.*
 import kotlin.math.abs
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/18
- *  desc   : 支持嵌套滚动的 LinearLayout
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/18
+ * desc   : 支持嵌套滚动的 LinearLayout
  */
 class NestedLinearLayout @JvmOverloads constructor(
     context: Context,

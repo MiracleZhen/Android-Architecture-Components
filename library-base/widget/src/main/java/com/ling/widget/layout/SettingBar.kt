@@ -22,10 +22,10 @@ import androidx.core.content.ContextCompat
 import com.ling.widget.R
 
 /**
- *  author : wangchengzhen
- *  github : https://github.com/getActivity/AndroidProject-Kotlin
- *  time   : 2022/5/18
- *  desc   : 设置条自定义控件
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/5/18
+ * desc   : 设置条自定义控件
  */
 class SettingBar @JvmOverloads constructor(
     context: Context,
