@@ -18,6 +18,8 @@
             <option value="$PROJECT_DIR$/learns/l02-kotlin" />
             <option value="$PROJECT_DIR$/library-base" />
             <option value="$PROJECT_DIR$/library-base/base" />
+            <option value="$PROJECT_DIR$/library-base/common" />
+            <option value="$PROJECT_DIR$/library-base/shape" />
             <option value="$PROJECT_DIR$/library-base/utils" />
             <option value="$PROJECT_DIR$/library-base/widget" />
           </set>

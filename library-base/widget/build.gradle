@@ -18,4 +18,10 @@ android {
 dependencies {
     // 基础库（不包任何第三方框架）
     implementation project(':library-base:base')
+    // Shape 框架：支持在布局中直接定义啦，支持设置阴影，文字渐变色，状态选择器
+    implementation project(':library-base:shape')
+
+    // 动画解析库：https://github.com/airbnb/lottie-android
+    // 动画资源：https://lottiefiles.com、https://icons8.com/animated-icons
+    implementation 'com.airbnb.android:lottie:4.1.0'
 }

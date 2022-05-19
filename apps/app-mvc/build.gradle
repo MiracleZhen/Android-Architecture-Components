@@ -143,4 +143,6 @@ dependencies {
     implementation project(':library-base:widget')
     // 工具封装
     implementation project(':library-base:utils')
+    // 通用库
+    implementation project(':library-base:common')
 }
