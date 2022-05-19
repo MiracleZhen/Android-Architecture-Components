@@ -8,6 +8,9 @@
       <module name="AAC.library-base.bar" target="1.8" />
       <module name="AAC.library-base.base" target="1.8" />
       <module name="AAC.library-base.common" target="1.8" />
+      <module name="AAC.library-base.easyhttp" target="1.8" />
+      <module name="AAC.library-base.EasyHttp" target="1.8" />
+      <module name="AAC.library-base.network" target="1.8" />
       <module name="AAC.library-base.permissions" target="1.8" />
       <module name="AAC.library-base.shape" target="1.8" />
       <module name="AAC.library-base.toast" target="1.8" />
