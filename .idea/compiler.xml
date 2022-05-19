@@ -9,6 +9,7 @@
       <module name="AAC.library-base.base" target="1.8" />
       <module name="AAC.library-base.common" target="1.8" />
       <module name="AAC.library-base.shape" target="1.8" />
+      <module name="AAC.library-base.toast" target="1.8" />
       <module name="AAC.library-base.utils" target="1.8" />
       <module name="AAC.library-base.widget" target="1.8" />
     </bytecodeTargetLevel>
