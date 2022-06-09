@@ -30,7 +30,7 @@ public final class XXPermissions {
     /**
      * 设置请求的对象
      *
-     * @param context          当前 Activity，可以传入栈顶的 Activity
+     * @param context 当前 Activity，可以传入栈顶的 Activity
      */
     public static XXPermissions with(Context context) {
         return new XXPermissions(context);
@@ -63,7 +63,8 @@ public final class XXPermissions {
      */
     public static IPermissionInterceptor getInterceptor() {
         if (sInterceptor == null) {
-            sInterceptor = new IPermissionInterceptor() {};
+            sInterceptor = new IPermissionInterceptor() {
+            };
         }
         return sInterceptor;
     }
@@ -244,7 +245,7 @@ public final class XXPermissions {
 
     /**
      * 判断一个或多个权限是否被永久拒绝了
-     *
+     * <p>
      * （注意不能在请求权限之前调用，应该在 {@link OnPermissionCallback#onDenied(List, boolean)} 方法中调用）
      */
     public static boolean isPermanentDenied(Activity activity, String... permissions) {
@@ -276,7 +277,7 @@ public final class XXPermissions {
     /**
      * 跳转到应用权限设置页
      *
-     * @param permissions           没有授予或者被拒绝的权限组
+     * @param permissions 没有授予或者被拒绝的权限组
      */
     public static void startPermissionActivity(Context context, List<String> permissions) {
         Activity activity = PermissionUtils.findActivity(context);
@@ -322,6 +323,51 @@ public final class XXPermissions {
     }
 
     public static void startPermissionActivity(Activity activity, List<String> permissions, OnPermissionPageCallback callback) {
+        PermissionPageFragment.beginRequest(activity, (ArrayList<String>) permissions, callback);
+    }
+
+    /* androidx.fragment.app.Fragment */
+
+    public static void startPermissionActivity(androidx.fragment.app.Fragment fragment) {
+        startPermissionActivity(fragment, (List<String>) null);
+    }
+
+    public static void startPermissionActivity(androidx.fragment.app.Fragment fragment, String... permissions) {
+        startPermissionActivity(fragment, PermissionUtils.asArrayList(permissions));
+    }
+
+    public static void startPermissionActivity(androidx.fragment.app.Fragment fragment, String[]... permissions) {
+        startPermissionActivity(fragment, PermissionUtils.asArrayLists(permissions));
+    }
+
+    public static void startPermissionActivity(androidx.fragment.app.Fragment fragment, List<String> permissions) {
+        startPermissionActivity(fragment, permissions, REQUEST_CODE);
+    }
+
+    public static void startPermissionActivity(androidx.fragment.app.Fragment fragment, List<String> permissions, int requestCode) {
+        Activity activity = fragment.getActivity();
+        if (activity == null) {
+            return;
+        }
+        fragment.startActivityForResult(PermissionPageIntent.getSmartPermissionIntent(activity, permissions), requestCode);
+    }
+
+    public static void startPermissionActivity(androidx.fragment.app.Fragment fragment, String permission, OnPermissionPageCallback callback) {
+        startPermissionActivity(fragment, PermissionUtils.asArrayList(permission), callback);
+    }
+
+    public static void startPermissionActivity(androidx.fragment.app.Fragment fragment, String[] permissions, OnPermissionPageCallback callback) {
+        startPermissionActivity(fragment, PermissionUtils.asArrayLists(permissions), callback);
+    }
+
+    public static void startPermissionActivity(androidx.fragment.app.Fragment fragment, List<String> permissions, OnPermissionPageCallback callback) {
+        Activity activity = fragment.getActivity();
+        if (activity == null || activity.isFinishing()) {
+            return;
+        }
+        if (Build.VERSION.SDK_INT >= AndroidVersion.ANDROID_4_2 && activity.isDestroyed()) {
+            return;
+        }
         PermissionPageFragment.beginRequest(activity, (ArrayList<String>) permissions, callback);
     }
 

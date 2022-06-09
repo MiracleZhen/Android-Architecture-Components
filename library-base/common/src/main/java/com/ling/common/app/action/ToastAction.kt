@@ -1,6 +1,7 @@
 package com.ling.common.app.action
 
 import androidx.annotation.StringRes
+import com.ling.toast.ToastUtils
 
 /**
  * author : wangchengzhen
@@ -11,14 +12,14 @@ import androidx.annotation.StringRes
 interface ToastAction {
 
     fun toast(text: CharSequence?) {
-
+        ToastUtils.show(text)
     }
 
     fun toast(@StringRes id: Int) {
-
+        ToastUtils.show(id)
     }
 
     fun toast(`object`: Any?) {
-
+        ToastUtils.show(`object`)
     }
 }

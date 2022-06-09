@@ -1,0 +1,14 @@
+package com.ling.aop.annotation
+
+/**
+ * author : wangchengzhen
+ * github : https://github.com/getActivity/AndroidProject-Kotlin
+ * time   : 2022/6/7
+ * desc   : Debug 日志注解
+ */
+@kotlin.annotation.Retention(AnnotationRetention.RUNTIME)
+@Target(AnnotationTarget.FUNCTION,
+    AnnotationTarget.PROPERTY_GETTER,
+    AnnotationTarget.PROPERTY_SETTER,
+    AnnotationTarget.CONSTRUCTOR)
+annotation class Log constructor(val value: String = "AppLog")

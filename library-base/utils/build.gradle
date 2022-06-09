@@ -23,8 +23,11 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
+    // 权限封装
+    api project(':library-base:permissions')
+
     // MMKV 轻量级k-v数据存储框架：https://github.com/Tencent/MMKV
-    implementation 'com.tencent:mmkv:1.2.11'
+    api 'com.tencent:mmkv:1.2.11'
     // Json 解析框架：https://github.com/google/gson
-    implementation 'com.google.code.gson:gson:2.8.8'
+    api 'com.google.code.gson:gson:2.8.8'
 }

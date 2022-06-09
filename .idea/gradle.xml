@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/learns/l01-foundation" />
             <option value="$PROJECT_DIR$/learns/l02-kotlin" />
             <option value="$PROJECT_DIR$/library-base" />
+            <option value="$PROJECT_DIR$/library-base/aop" />
             <option value="$PROJECT_DIR$/library-base/bar" />
             <option value="$PROJECT_DIR$/library-base/base" />
             <option value="$PROJECT_DIR$/library-base/common" />
@@ -26,6 +27,9 @@
             <option value="$PROJECT_DIR$/library-base/toast" />
             <option value="$PROJECT_DIR$/library-base/utils" />
             <option value="$PROJECT_DIR$/library-base/widget" />
+            <option value="$PROJECT_DIR$/library-function" />
+            <option value="$PROJECT_DIR$/library-function/gateway" />
+            <option value="$PROJECT_DIR$/library-function/umeng" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

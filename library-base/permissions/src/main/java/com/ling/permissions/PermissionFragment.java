@@ -86,7 +86,6 @@ public final class PermissionFragment extends Fragment implements Runnable {
      */
     public void attachActivity(Activity activity) {
         activity.getFragmentManager().beginTransaction().add(this, this.toString()).commitAllowingStateLoss();
-        activity.getFragmentManager().beginTransaction().add(this, "");
     }
 
     /**

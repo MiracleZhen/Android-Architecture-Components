@@ -135,7 +135,7 @@ abstract class BaseActivity : AppCompatActivity(),
     }
 
     @Suppress("deprecation")
-    override fun startActivityForResult(intent: Intent?, requestCode: Int, options: Bundle?) {
+    override fun startActivityForResult(intent: Intent, requestCode: Int, options: Bundle?) {
         // 隐藏软键，避免内存泄漏
         hideKeyboard(currentFocus)
         // 查看源码得知 startActivity 最终也会调用 startActivityForResult
