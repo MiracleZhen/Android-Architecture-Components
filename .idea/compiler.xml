@@ -5,6 +5,7 @@
       <module name="AAC.app" target="1.8" />
       <module name="AAC.apps.app-mvc" target="1.8" />
       <module name="AAC.learns.l01-foundation" target="1.8" />
+      <module name="AAC.learns.l02-kotlin-coroutine" target="1.8" />
       <module name="AAC.library-base.aop" target="1.8" />
       <module name="AAC.library-base.bar" target="1.8" />
       <module name="AAC.library-base.base" target="1.8" />

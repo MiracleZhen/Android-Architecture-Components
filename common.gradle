@@ -76,17 +76,20 @@ dependencies {
     // Material 库：https://github.com/material-components/material-components-android
     // noinspection GradleDependency
     implementation 'com.google.android.material:material:1.4.0'
-    // ConstraintLayout 库：https://github.com/androidx/constraintlayout
+    // 约束布局 库：https://github.com/androidx/constraintlayout
     // noinspection GradleDependency
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
 
-    // Kotlin 协程：https://github.com/Kotlin/kotlinx.coroutines
+    // Kotlin Coroutine 协程：https://github.com/Kotlin/kotlinx.coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0'
     // noinspection GradleDependency
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
+    // ViewModel 库
     // noinspection GradleDependency
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+    // LiveData 库
+    // implementation 'androidx.lifecycle:lifecycle-extensions:2.3.1'
 
     // noinspection GradleDependency
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.5.31'

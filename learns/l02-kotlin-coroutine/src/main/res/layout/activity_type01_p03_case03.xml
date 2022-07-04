@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.并发不安全" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2.多线程中的并发安全工具 - Lock" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3.多线程中的并发安全工具 - synchronized" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4.多线程中的并发安全工具 - CAS" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5.协程中的并发安全工具 - Mutex" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6.协程中的并发安全工具 - Semaphore" />
+</LinearLayout>

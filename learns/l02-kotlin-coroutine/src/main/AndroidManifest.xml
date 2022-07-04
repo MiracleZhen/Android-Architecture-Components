@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ling.coroutine">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AAC">
+
+        <activity
+            android:name=".CoroutineActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AAC.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".type01.Type01Activity"
+            android:label="Part01: Kotlin 协程 - 基础" />
+
+        <activity
+            android:name=".type01.p1.Case01Activity"
+            android:label="Kotlin 协程（一） ——— 简介" />
+
+        <activity
+            android:name=".type01.p1.Case02Activity"
+            android:label="Kotlin 协程 （二） ——— 结构化并发" />
+
+        <activity
+            android:name=".type01.p1.Case03Activity"
+            android:label="Kotlin 协程 （三）——— 启动模式" />
+
+        <activity
+            android:name=".type01.p1.Case04Activity"
+            android:label="Kotlin 协程 （四） ——— Job 对象" />
+
+        <activity
+            android:name=".type01.p1.Case05Activity"
+            android:label="Kotlin 协程 （五） ——— 协程上下文：CoroutineContext" />
+
+        <activity
+            android:name=".type01.p1.Case06Activity"
+            android:label="Kotlin 协程 （六） ——— 协程异常处理：CoroutineExceptionHandler" />
+
+        <activity
+            android:name=".type01.p1.Case07Activity"
+            android:label="Kotlin 协程 （七） ——— 协程 + Retrofit 实战" />
+
+        <activity
+            android:name=".type01.p2.Case01Activity"
+            android:label="Kotlin 协程 （八） ——— Flow 简介" />
+
+        <activity
+            android:name=".type01.p2.Case02Activity"
+            android:label="Kotlin 协程 （九） ——— Flow 背压" />
+
+        <activity
+            android:name=".type01.p2.Case03Activity"
+            android:label="Kotlin 协程 （十） ——— Flow 过渡操作符、限长操作符" />
+
+        <activity
+            android:name=".type01.p2.Case04Activity"
+            android:label="Kotlin 协程 （十一） ——— Flow 末端操作符、组合/展平操作符" />
+
+        <activity
+            android:name=".type01.p3.Case01Activity"
+            android:label="Kotlin 协程 （十二） ——— Channel 简介" />
+
+        <activity
+            android:name=".type01.p3.Case02Activity"
+            android:label="Kotlin 协程 （十三） ——— 多路复用" />
+
+        <activity
+            android:name=".type01.p3.Case03Activity"
+            android:label="Kotlin 协程 （十四） ——— 并发安全" />
+
+        <activity
+            android:name=".type01.p3.Case04Activity"
+            android:label="Kotlin 协程 （十五） ——— Flow + Retrofit 下载文件" />
+
+        <activity
+            android:name=".type01.p3.Case05Activity"
+            android:label="Kotlin 协程 （十六） ——— StateFlow 简介" />
+
+        <activity
+            android:name=".type01.p3.Case06Activity"
+            android:label="Kotlin 协程 （十七） ——— SharedFlow 简介" />
+    </application>
+
+</manifest>

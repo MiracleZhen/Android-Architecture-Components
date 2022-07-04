@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.send() 发送数据，receive() 接收数据" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2.迭代器 Iterator" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3.通过 for-in 循环获取 Channel 中的所有元素" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4.Channel 缓冲区" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5.produce() 创建生产者协程" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6.actor() 创建消费者协程" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7.关闭 Channel" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="8.BroadcastChannel" />
+</LinearLayout>

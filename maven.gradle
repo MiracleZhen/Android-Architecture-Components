@@ -10,7 +10,8 @@ static def addCommonMaven(RepositoryHandler handler) {
     handler.mavenCentral()
     handler.google()
     // noinspection JcenterRepositoryObsolete
-    handler.jcenter()
+    // This repository is deprecated and it will be shut down in the future.
+    // handler.jcenter()
 }
 
 ext.addCommonMaven = this.&addCommonMaven

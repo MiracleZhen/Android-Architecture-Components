@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.用协程的基础设施实现协程" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2.用上层框架开启一个协程" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3.挂起函数" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4.开启协程：launch VS async" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5.阻塞协程：join VS await" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6.阻塞协程：join VS await" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="result" />
+</LinearLayout>

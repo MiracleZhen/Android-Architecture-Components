@@ -1,0 +1,65 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+apply from: '../../common.gradle'
+
+android {
+
+    defaultConfig {
+        applicationId "com.ling.coroutine"
+        versionCode 1
+        versionName "1.0"
+
+        // 混淆配置
+        proguardFiles 'proguard-rules.pro'
+    }
+
+    signingConfigs {
+        config {
+            storeFile file('../../apps/app-mvc/AppSignature.jks')
+            storePassword 'AndroidProject'
+            keyAlias 'AndroidProject'
+            keyPassword 'AndroidProject'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.config
+        }
+
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        // If you plan to use data binding in a Kotlin project, you should apply the kotlin-kapt plugin.
+        enabled true
+    }
+}
+
+dependencies {
+    // noinspection GradleDependency
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.1'
+    // noinspection GradleDependency
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.1'
+
+    // LiveData
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
+    // implementation 'androidx.fragment:fragment-ktx:1.4.1'
+
+    // Coroutine
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0'
+
+    // retrofit 库：https://github.com/square/retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
+}
