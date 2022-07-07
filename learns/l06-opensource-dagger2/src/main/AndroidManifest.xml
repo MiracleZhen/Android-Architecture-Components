@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ling.dagger2">
+
+    <application
+        android:name=".hilt.HiltApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AAC">
+        <activity
+            android:name=".Dagger2Activity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AAC.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".part01.RepositoryActivity"
+            android:label="Dagger2 知识梳理(1) Dagger2 依赖注入的两种方式" />
+
+        <activity
+            android:name=".part02.QualifierActivity"
+            android:label="Dagger2 知识梳理(2) @Qulifier 和 @Named 解决依赖注入迷失" />
+
+        <activity
+            android:name=".part03.ComponentActivity"
+            android:label="Dagger2 知识梳理(3) 使用 dependencies 和 @SubComponent 完成依赖注入" />
+
+        <activity
+            android:name=".part04.activity.ScopeActivity"
+            android:label="Dagger2 知识梳理(4) @Scope 注解的使用" />
+
+        <activity
+            android:name=".part05.activity.m1.Demo1Activity"
+            android:label="Dagger2 知识梳理(5) Dagger2-Android支持库" />
+
+        <activity
+            android:name=".part05.activity.m2.Demo2Activity"
+            android:label="Dagger2 知识梳理(5) Dagger2-Android支持库" />
+
+        <activity
+            android:name=".hilt.HiltActivity"
+            android:label="Hilt" />
+    </application>
+
+</manifest>

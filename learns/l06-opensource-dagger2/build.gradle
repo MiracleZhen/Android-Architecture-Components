@@ -1,0 +1,66 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+apply from: '../../common.gradle'
+
+android {
+
+    defaultConfig {
+        applicationId "com.ling.dagger2"
+        versionCode 1
+        versionName "1.0"
+
+        // 混淆配置
+        proguardFiles 'proguard-rules.pro'
+
+        // remove this after migration to Hilt：https://stackoverflow.com/questions/63226722/error-in-supressing-installin-check-whilst-migrating-from-dagger-to-hilt-using
+        javaCompileOptions.annotationProcessorOptions.arguments['dagger.hilt.disableModulesHaveInstallInCheck'] = 'true'
+    }
+
+    signingConfigs {
+        config {
+            storeFile file('../../apps/app-mvc/AppSignature.jks')
+            storePassword 'AndroidProject'
+            keyAlias 'AndroidProject'
+            keyPassword 'AndroidProject'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.config
+        }
+
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // jetpack - navigation
+    // noinspection GradleDependency
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.1'
+    // noinspection GradleDependency
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.1'
+
+    def dagger2_version = "2.40.5"
+    // Dagger2 核心库：https://github.com/google/dagger
+    implementation "com.google.dagger:dagger:$dagger2_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger2_version"
+    // Dagger2 Android支持库
+    implementation "com.google.dagger:dagger-android:$dagger2_version"
+    // if you use the support libraries
+    implementation "com.google.dagger:dagger-android-support:$dagger2_version"
+    kapt "com.google.dagger:dagger-android-processor:$dagger2_version"
+
+    def hilt_version = "2.40.5"
+    // Hilt 注入库：https://dagger.dev/hilt/
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-compiler:$hilt_version"
+}
