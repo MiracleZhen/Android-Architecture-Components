@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+apply from: '../../common.gradle'
+
+android {
+
+    defaultConfig {
+        applicationId "com.ling.jetpack"
+        versionCode 1
+        versionName "1.0"
+
+        // 混淆配置
+        proguardFiles 'proguard-rules.pro'
+    }
+
+    signingConfigs {
+        config {
+            storeFile file('../../apps/app-mvc/AppSignature.jks')
+            storePassword 'AndroidProject'
+            keyAlias 'AndroidProject'
+            keyPassword 'AndroidProject'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.config
+        }
+
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // jetpack - lifecycle
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    // jetpack - liveData
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+    // jetpack - viewModel
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+    // jetpack - navigation
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.1'
+}

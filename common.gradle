@@ -81,7 +81,9 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
 
     // Kotlin Coroutine 协程：https://github.com/Kotlin/kotlinx.coroutines
+    //noinspection GradleDependency
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
+    //noinspection GradleDependency
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0'
     // noinspection GradleDependency
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
