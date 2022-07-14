@@ -90,7 +90,7 @@ open class GatewayApplication : AppApplication() {
         ToastUtils.setInterceptor(ToastLogInterceptor())
 
         // 本地异常捕捉
-        CrashHandler.register(application)
+        // CrashHandler.register(application)
 
         // MMKV 初始化
         MMKV.initialize(application)

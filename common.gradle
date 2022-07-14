@@ -80,21 +80,31 @@ dependencies {
     // noinspection GradleDependency
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
 
-    // Kotlin Coroutine 协程：https://github.com/Kotlin/kotlinx.coroutines
-    //noinspection GradleDependency
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
-    //noinspection GradleDependency
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0'
+    // Jetpack - Lifecycle
     // noinspection GradleDependency
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
-    // ViewModel 库
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    // Jetpack - LiveData
+    // noinspection GradleDependency
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+    // Jetpack - ViewModel
     // noinspection GradleDependency
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
-    // LiveData 库
-    // implementation 'androidx.lifecycle:lifecycle-extensions:2.3.1'
+    // Jetpack - Navigation
+    // noinspection GradleDependency
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.1'
+    // noinspection GradleDependency
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.1'
 
+    // kotlin 库
     // noinspection GradleDependency
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.5.31'
     // noinspection GradleDependency
     implementation 'androidx.core:core-ktx:1.3.1'
+
+    // Kotlin Coroutine 协程：https://github.com/Kotlin/kotlinx.coroutines
+    // noinspection GradleDependency
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
+    // noinspection GradleDependency
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0'
 }

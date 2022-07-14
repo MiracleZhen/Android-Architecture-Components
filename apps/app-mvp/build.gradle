@@ -1,0 +1,97 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    // kapt注解处理器
+    id 'kotlin-kapt'
+}
+apply from: '../../common.gradle'
+
+android {
+
+    defaultConfig {
+        applicationId "com.ling.mvp"
+        versionCode 1
+        versionName "1.0"
+
+        // 混淆配置
+        proguardFiles 'proguard-rules.pro'
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation":
+                                     "$projectDir/schemas".toString()]
+            }
+        }
+    }
+
+    signingConfigs {
+        config {
+            storeFile file('../../apps/app-mvc/AppSignature.jks')
+            storePassword 'AndroidProject'
+            keyAlias 'AndroidProject'
+            keyPassword 'AndroidProject'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.config
+            buildConfigField("String", "BASE_URL", "\"http://www.mocky.io/v2\"")
+            buildConfigField("String", "API_KEY", "\"ABCXYZ123TEST\"")
+        }
+
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "BASE_URL", "\"http://www.mocky.io/v2\"")
+            buildConfigField("String", "API_KEY", "\"ABCXYZ123TEST\"")
+        }
+    }
+}
+
+dependencies {
+    // gateway
+    implementation project(':library-function:gateway')
+
+    // Jetpack - room
+    def room_version = "2.2.5"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation "androidx.room:room-ktx:$room_version"
+
+    // network
+    def rx2_android_networking_version = "1.0.2"
+    implementation "com.amitshekhar.android:rx2-android-networking:$rx2_android_networking_version"
+
+    // 图片加载框架：https://github.com/bumptech/glide
+    // 官方使用文档：https://github.com/Muyangmin/glide-docs-cn
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    kapt 'com.github.bumptech.glide:compiler:4.12.0'
+
+    // font: https://github.com/chrisjenx/Calligraphy
+    def calligraphy_version = "2.3.0"
+    implementation "uk.co.chrisjenx:calligraphy:$calligraphy_version"
+
+    // swipe view
+    def placeholder_version = "0.6.1"
+    implementation "com.mindorks:placeholderview:$placeholder_version"
+
+    def rxjava2_version = "2.2.21"
+    def rxandroid_version = "2.1.1"
+    // RxJava: https://github.com/ReactiveX/RxJava
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava2_version"
+    // RxJava bindings for Android: https://github.com/ReactiveX/RxAndroid
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+
+    def dagger2_version = "2.40.5"
+    // Dagger2 核心库：https://github.com/google/dagger
+    implementation "com.google.dagger:dagger:$dagger2_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger2_version"
+    // Dagger2 Android支持库
+    implementation "com.google.dagger:dagger-android:$dagger2_version"
+    // if you use the support libraries
+    implementation "com.google.dagger:dagger-android-support:$dagger2_version"
+    kapt "com.google.dagger:dagger-android-processor:$dagger2_version"
+}

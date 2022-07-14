@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/apps" />
             <option value="$PROJECT_DIR$/apps/app-mvc" />
+            <option value="$PROJECT_DIR$/apps/app-mvp" />
             <option value="$PROJECT_DIR$/learns" />
             <option value="$PROJECT_DIR$/learns/l01-foundation" />
             <option value="$PROJECT_DIR$/learns/l02-kotlin" />

@@ -29,7 +29,7 @@ open class AppApplication : BaseApplication() {
         Utils.init(application)
 
         // Debug 环境开启 StrictMode 模式
-        if (AppUtils.isAppDebug()) {
+        if (AppUtils.isAppDebug() && false) {
             StrictMode.setThreadPolicy(StrictMode.ThreadPolicy.Builder()
                 // 检测读写操作
                 .detectDiskReads()
@@ -42,6 +42,7 @@ open class AppApplication : BaseApplication() {
                 // .penaltyDeath()
                 .build())
             StrictMode.setVmPolicy(VmPolicy.Builder()
+                .detectActivityLeaks()
                 // 检测Sqlite对象泄漏
                 .detectLeakedSqlLiteObjects()
                 // 检测未关闭的Closable对象泄漏
