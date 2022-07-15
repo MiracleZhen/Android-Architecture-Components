@@ -18,11 +18,11 @@ android {
 
 dependencies {
     // 通用库
-    api project(':library-base:common')
+    api project(':library-foundation:common')
     // 控件封装
-    api project(':library-base:widget')
+    api project(':library-foundation:widget')
     // 工具封装
-    api project(':library-base:utils')
+    api project(':library-foundation:utils')
 
     // 图片加载框架：https://github.com/bumptech/glide
     // 官方使用文档：https://github.com/Muyangmin/glide-docs-cn

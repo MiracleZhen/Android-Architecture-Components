@@ -17,13 +17,13 @@ android {
 
 dependencies {
     // 基础库（不包任何第三方框架）
-    api project(':library-base:base')
+    api project(':library-foundation:base')
     // Shape 框架：支持在布局中直接定义啦，支持设置阴影，文字渐变色，状态选择器
-    api project(':library-base:shape')
+    api project(':library-foundation:shape')
     // 标题栏框架：https://github.com/getActivity/TitleBar
-    api project(':library-base:bar')
+    api project(':library-foundation:bar')
     // 吐司框架：https://github.com/getActivity/ToastUtils
-    api project(':library-base:toast')
+    api project(':library-foundation:toast')
 
     // 动画解析库：https://github.com/airbnb/lottie-android
     // 动画资源：https://lottiefiles.com、https://icons8.com/animated-icons

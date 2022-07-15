@@ -9,18 +9,19 @@
       <module name="AAC.learns.l02-kotlin-coroutine" target="1.8" />
       <module name="AAC.learns.l06-opensource-dagger2" target="1.8" />
       <module name="AAC.learns.l06-opensource-jetpack" target="1.8" />
-      <module name="AAC.library-base.aop" target="1.8" />
-      <module name="AAC.library-base.bar" target="1.8" />
       <module name="AAC.library-base.base" target="1.8" />
-      <module name="AAC.library-base.common" target="1.8" />
       <module name="AAC.library-base.easyhttp" target="1.8" />
       <module name="AAC.library-base.EasyHttp" target="1.8" />
-      <module name="AAC.library-base.network" target="1.8" />
-      <module name="AAC.library-base.permissions" target="1.8" />
-      <module name="AAC.library-base.shape" target="1.8" />
-      <module name="AAC.library-base.toast" target="1.8" />
-      <module name="AAC.library-base.utils" target="1.8" />
-      <module name="AAC.library-base.widget" target="1.8" />
+      <module name="AAC.library-foundation.aop" target="1.8" />
+      <module name="AAC.library-foundation.bar" target="1.8" />
+      <module name="AAC.library-foundation.base" target="1.8" />
+      <module name="AAC.library-foundation.common" target="1.8" />
+      <module name="AAC.library-foundation.network" target="1.8" />
+      <module name="AAC.library-foundation.permissions" target="1.8" />
+      <module name="AAC.library-foundation.shape" target="1.8" />
+      <module name="AAC.library-foundation.toast" target="1.8" />
+      <module name="AAC.library-foundation.utils" target="1.8" />
+      <module name="AAC.library-foundation.widget" target="1.8" />
       <module name="AAC.library-function.gateway" target="1.8" />
       <module name="AAC.library-function.umeng" target="1.8" />
     </bytecodeTargetLevel>

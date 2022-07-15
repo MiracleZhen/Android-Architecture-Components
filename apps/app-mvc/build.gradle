@@ -148,7 +148,7 @@ dependencies {
     // 友盟封装
     implementation project(':library-function:umeng')
     // aop封装
-    implementation project(':library-base:aop')
+    implementation project(':library-foundation:aop')
 
     // 图片加载框架：https://github.com/bumptech/glide
     // 官方使用文档：https://github.com/Muyangmin/glide-docs-cn

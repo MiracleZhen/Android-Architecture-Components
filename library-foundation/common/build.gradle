@@ -17,12 +17,12 @@ android {
 
 dependencies {
     // 基础库（不包任何第三方框架）
-    api project(':library-base:base')
+    api project(':library-foundation:base')
     // 网络请求框架封装
-    api project(':library-base:network')
+    api project(':library-foundation:network')
 
     // 控件封装
-    implementation project(':library-base:widget')
+    implementation project(':library-foundation:widget')
     // 工具封装
-    implementation project(':library-base:utils')
+    implementation project(':library-foundation:utils')
 }

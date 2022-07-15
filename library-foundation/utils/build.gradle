@@ -24,7 +24,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     // 权限封装
-    api project(':library-base:permissions')
+    api project(':library-foundation:permissions')
 
     // MMKV 轻量级k-v数据存储框架：https://github.com/Tencent/MMKV
     api 'com.tencent:mmkv:1.2.11'
